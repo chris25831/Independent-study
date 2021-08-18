@@ -1,0 +1,433 @@
+@import "./common/common.css";
+@import "./common/header.css";
+@import "./common/footer.css";
+
+body{
+    min-width: 1200px;
+}
+
+main{   
+    /* border: 1px solid yellow; */
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* P1 */
+main div.news_p1{
+    width: 770px;
+    height: 420px;
+    /* border: 1px solid blue; */
+    margin: 168px 0px 174px 300px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+main div.news_p1 div a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+main div.news_p1 div.main{
+    width: 600px;
+    height: 420px;
+    /* border: 1px solid red; */
+    border-radius: 20px;
+    background-image: url("../img/shop/item/135/FujiFilm-Pro400H.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 主消息背景白色 */
+main div.news_p1 div.main::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: white;
+    z-index: -1;
+}
+
+/* 主消息說明文字 */
+main div.news_p1 div.main p{
+    width: 100%;
+    height: 140px;
+    margin: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    bottom: -80px;
+    transition: transform 600ms ease;
+    font-size: 40px;
+    text-align: center;
+    padding: 4px 0px;
+    
+}
+
+main div.news_p1 div.main p span{
+    font-size: 20px;
+    text-align: left;
+    margin: 0 auto;
+    /* border: 1px solid yellow; */
+    width: 550px; 
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    
+    
+}
+
+/* 說明文字hover效果 */
+main div.news_p1 div.main:hover p{
+    transform: translateY(-80px);
+}
+
+
+
+main div.news_p1 div.other{
+    width: 150px;
+    /* border: 1px solid red; */
+
+}
+
+main div.news_p1 div.other > div{
+    width: 150px;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: transform 200ms ease;
+}
+
+main div.news_p1 div.other > div:hover{
+    transform: scale(1.1);
+}
+
+/* other單一圖片設定 */
+main div.news_p1 div.other > div:nth-child(1){
+    background-image: url("../img/class/class1.jpg");
+    
+}
+
+main div.news_p1 div.other > div:nth-child(2){
+    background-image: url("../img/shop/item/other/kodakfilmbox.jpg");
+    
+}
+
+main div.news_p1 div.other > div:nth-child(3){
+    background-image: url("../img/class/class6.jpg");
+    
+}
+
+/* P1背景line */
+main div.news_p1 div.line{
+    width: 1200px;
+    height: 80px;
+    /* border: 1px solid red; */
+    position: absolute;
+    bottom: -127px;
+    left: -300px;
+    padding-left: 600px;
+}
+
+/* P2 */
+main div.news_p2{
+    width: 500px;
+    height: 420px;
+    /* border: 1px solid blue; */
+    margin: 0 auto 192px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+main div.news_p2 p.subtitle{
+    margin: 0 auto 44px;
+}
+
+main div.news_p2 div.content{
+    /* border: 1px solid hotpink; */
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+main div.news_p2 div.content div.nav_bar{
+    height: 28px;
+    /* border: 1px solid red; */
+    display: flex;
+    padding-left: 17px;
+    position: relative;
+    align-items:center;
+    flex-grow: 1;
+}
+
+main div.news_p2 div.content div.nav_bar div{
+    background-color: white;
+    /* border: 1px solid orange; */
+    border-radius: 10px 10px 0px 0px;
+    width: 50px;
+    height: 28px;
+    text-align: center;
+    padding: 8px 0px 2px;
+    position: absolute;
+
+}
+
+main div.news_p2 div.content div.nav_bar div:nth-child(2){
+    left: 63px;
+   
+}
+
+
+/* active點擊效果 */
+main div.news_p2 div.content div.nav_bar div.active{
+    background-color: #d8d8d8;
+    z-index: 2;
+    font-weight: bold;
+}
+
+
+main div.news_p2 div.content div.news_table{
+    height: 300px;
+    /* border: 1px solid red; */
+    background-color: #d8d8d8;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main div.news_p2 div.content div.news_table div.select{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main div.news_p2 div.content div.news_table div.select div{
+    /* border: 1px solid green; */
+    margin-right: 17px;
+}
+
+main div.news_p2 div.content div.news_table div.txt{
+    width: 364px;
+    height: 252px;
+    background-color: white;
+    border-radius: 15px 15px 0px 0px;
+    position: relative;
+   
+
+}
+
+main div.news_p2 div.content div.news_table div.txt p{
+    width: 287px; 
+    font-family: "JhengHei-custom";
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0px auto 14px;
+}
+
+
+main div.news_p2 div.content div.news_table div.txt p:nth-child(1){
+    margin-top: 25px;
+}
+
+
+main div.news_p2 div.content div.news_table div.txt div a{
+    text-decoration: none;
+    display: inline-block;    
+    width: 74px;
+    position: absolute;
+    left: calc(50% - 37px);
+    bottom: 2px;
+    font-size: 20px;
+
+    
+}
+
+main div.news_p2 div.content div.news_table div.txt div a:visited{
+    color: black;
+}
+
+main div.news_p2 div.content div.news_table div.txt div a:hover{
+    color: red;
+}
+
+/* P2背景line */
+main div.news_p2 div.line{
+    width: 1200px;
+    height: 80px;
+    /* border: 1px solid red; */
+    position: absolute;
+    bottom: -136px;
+    left: -350px;
+    padding-left: 600px;
+}
+
+/* P3 */
+main div.news_p3{
+    width: 982px;
+    height: 611px;
+    /* border: 1px solid blue; */
+    margin: 0 auto 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+main div.news_p2 p.subtitle{
+    margin: 0 auto 94px;
+}
+
+main div.news_p3 div.content{
+    /* border: 1px solid hotpink; */
+    display: flex;
+}
+
+main div.news_p3 div.content >div{
+    width: 491px;
+    height: 491px;
+    display: grid;
+    /* border: 1px solid green; */
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+main div.news_p3 div.content >div div{
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    transition: transform 200ms ease;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main div.news_p3 div.content > div div:hover{
+    transform: scale(1.1);
+}
+
+main div.news_p3 div.content div div p{
+    margin: 0;
+    width: 42px;
+    position: absolute;
+    font-size: 80px;
+    font-family: 'Segoe UI';
+    text-align: center;
+}
+
+
+main div.news_p3 div.content >div div a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    
+}
+
+main div.news_p3 div.content >div div a:visited{
+    color: white;
+    
+}
+
+/* 展覽圖片 */
+main div.news_p3 div.content div.exhibition div:nth-child(1){
+    background-image: url("../img/exhibition&market/ex1.jpg");
+    background-position: -20px center;
+}
+
+main div.news_p3 div.content div.exhibition div:nth-child(2){
+    background-image: url("../img/exhibition&market/ex2.jpg");
+    background-position: -20px center;
+}
+
+main div.news_p3 div.content div.exhibition div:nth-child(3){
+    background-image: url("../img/exhibition&market/ex3.jpg");
+    background-position: -30px center;
+}
+
+main div.news_p3 div.content div.exhibition div:nth-child(4){
+    background-image: url("../img/exhibition&market/ex4.jpg");
+    background-position: 0px center;
+}
+
+main div.news_p3 div.content div.exhibition div:nth-child(5){
+    background-image: url("../img/exhibition&market/ex5.jpg");
+    background-position: center center;
+}
+/* +設定 */
+main div.news_p3 div.content div.exhibition div:nth-child(7){
+    background-color: #d8d8d8;
+    position: relative;
+    padding-left: calc(50% - 28px);
+
+}
+
+/* 市集圖片 */
+main div.news_p3 div.content div.market div:nth-child(3){
+    background-image:url("../img/exhibition&market/ma1.jpg");
+    background-position: center center;
+}
+
+main div.news_p3 div.content div.market div:nth-child(5){
+    background-image:url("../img/exhibition&market/ma2.jpg");
+    background-position: -40px center;
+}
+
+main div.news_p3 div.content div.market div:nth-child(6){
+    background-image:url("../img/exhibition&market/ma3.jpg");
+    background-position: -230px center;
+}
+
+main div.news_p3 div.content div.market div:nth-child(7){
+    background-image:url("../img/exhibition&market/ma4.jpg");
+    background-position: center center;
+}
+
+main div.news_p3 div.content div.market div:nth-child(8){
+    background-image:url("../img/exhibition&market/ma5.jpg");
+    background-position: center center;
+}
+
+/* +設定 */
+main div.news_p3 div.content div.market div:nth-child(9){
+    background-color: #d8d8d8;
+    position: relative;
+    padding-left: calc(50% - 28px);
+
+}
+
+/* TODO:問題寬高不等 */
+main div.news_p3 div.content div.market div p{
+    margin: 0;
+    width: 42px;
+    position: absolute;
+    font-size: 80px;
+    font-family: 'Segoe UI';
+    text-align: center;
+    top: 11px;
+}
+
+
+/* 隱藏欄位 */
+main div.news_p3 div.content div div.hidden{
+    visibility: hidden;
+}
+
+footer > button.top{
+    top:-52px;
+    right: 92px;
+}

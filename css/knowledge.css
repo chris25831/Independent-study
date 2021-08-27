@@ -3,466 +3,466 @@
 @import "./common/footer.css";
 
 /* P1 */
-main div.knows_p1{
-    /* border: 1px solid red; */
-    width: 1200px;
-    height: 838px;
-    margin: 180px auto 190px;
-    padding-left: 238px;
-    /* QA1 */
-    padding-top: 1px;
-    position: relative;
-
-
+main div.knows_p1 {
+  /* border: 1px solid red; */
+  width: 1200px;
+  height: 838px;
+  margin: 180px auto 190px;
+  padding-left: 238px;
+  /* QA1 */
+  padding-top: 1px;
+  position: relative;
 }
 
 /* main div.knows_p1 div{
     border: 1px solid blue;
 } */
 
-main div.knows_p1 div p{
-    line-height: 24px;
+main div.knows_p1 div p {
+  line-height: 24px;
 }
 
-main div.knows_p1 p.subtitle{
-    display: inline-block;
-    position: absolute;
-    margin: 0px 0px 0px 20px;
+main div.knows_p1 p.subtitle {
+  display: inline-block;
+  position: absolute;
+  margin: 0px 0px 0px 20px;
 }
 
 /* 文章1 */
-main div.knows_p1 div.txt1{
-    display: flex;
-    margin: 32px 0 78px;
-    align-items: center;
+main div.knows_p1 div.txt1 {
+  display: flex;
+  margin: 32px 0 78px;
+  align-items: center;
 }
 
-main div.knows_p1 div.txt1 p{
-    display: inline-block;
-    width: 356px;
-    margin:0px 50px 0px 0px;
+main div.knows_p1 div.txt1 p {
+  display: inline-block;
+  width: 356px;
+  margin: 0px 50px 0px 0px;
 }
 
-main div.knows_p1 div.txt1 div{
-    width: 300px;
-    height: 200px;
-    /* border: 1px solid yellow; */
-    background-image: url("../img/knowledge/Camera_Obscura_box18thCentury.jpg");
-    background-size: cover;
-    background-position: center -20px;
-    background-repeat: no-repeat;
+main div.knows_p1 div.txt1 div {
+  width: 300px;
+  height: 200px;
+  /* border: 1px solid yellow; */
+  overflow: hidden;
+}
+
+main div.knows_p1 div.txt1 div img {
+  width: 100%;
+  position: relative;
+  bottom: 20px;
 }
 
 /* 文章2 */
-main div.knows_p1 div.txt2{
-    display: flex;
-    margin-bottom: 100px;
-    align-items: center;
+main div.knows_p1 div.txt2 {
+  display: flex;
+  margin-bottom: 100px;
+  align-items: center;
 }
 
-main div.knows_p1 div.txt2 p{
-    display: inline-block;
-    width: 502px;
-    margin: 0px 90px 0px 0px;
+main div.knows_p1 div.txt2 p {
+  display: inline-block;
+  width: 502px;
+  margin: 0px 90px 0px 0px;
 }
 
-main div.knows_p1 div.txt2 div{
-    width: 250px;
-    height: 173px;
-    background-image: url("../img/knowledge/firstimg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+main div.knows_p1 div.txt2 div {
+  width: 250px;
+  height: 173px;
+  overflow: hidden;
+}
 
+main div.knows_p1 div.txt2 div img {
+  width: 100%;
+  position: relative;
 }
 
 /* 文章3 */
-main div.knows_p1 div.txt3{
-    display: flex;
-    align-items: center;
+main div.knows_p1 div.txt3 {
+  display: flex;
+  align-items: center;
 }
 
-main div.knows_p1 div.txt3 p{
-    display: inline-block;
-    width: 432px;
-    margin: 0px 70px 0px 0px;
+main div.knows_p1 div.txt3 p {
+  display: inline-block;
+  width: 432px;
+  margin: 0px 70px 0px 0px;
 }
 
-main div.knows_p1 div.txt3 div{
-    width: 300px;
-    height: 200px;
-    background-image: url("../img/knowledge/film.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+main div.knows_p1 div.txt3 div {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
 }
 
+main div.knows_p1 div.txt3 div img {
+  width: 100%;
+}
 
 /* P2 */
-main div.knows_p2{
-    /* border: 1px solid red; */
-    min-width: 1366px;
-    height: 875px;
-    padding-top: 140px; 
-    position: relative;
-    margin-bottom: 178px;
-    overflow: hidden;
-
+main div.knows_p2 {
+  /* border: 1px solid red; */
+  min-width: 1366px;
+  height: 875px;
+  padding-top: 140px;
+  position: relative;
+  margin-bottom: 178px;
+  overflow: hidden;
 }
 /* P2背景色 */
-main div.knows_p2::before{
-    /* border: 1px solid blue; */
-    content: "";
-    width: 100%;
-    height: 600px;
-    background-color: #d8d8d8;
-    position: absolute;
-    left:0;
-    z-index: -1;
+main div.knows_p2::before {
+  /* border: 1px solid blue; */
+  content: "";
+  width: 100%;
+  height: 600px;
+  background-color: #d8d8d8;
+  position: absolute;
+  left: 0;
+  z-index: -1;
 }
 
-
-main div.knows_p2 > div{
-    /* border: 1px solid blue; */
-    width: 1200px;
-    height: 600px;
-    margin: 0 auto;
-    position: relative;
+main div.knows_p2 > div {
+  /* border: 1px solid blue; */
+  width: 1200px;
+  height: 600px;
+  margin: 0 auto;
+  position: relative;
 }
 
 /* P2 bg_l */
-main div.knows_p2 > div div.bg_l{
-    width: 500px;
-    height: 500px;
-    /* border: 1px solid orange; */
-    position: absolute;
-    top: -140px;
-    left: -253px;
-    border-radius: 50%;
-    background-image: url("../img/knowledge/P3-bg1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    overflow: hidden;
+main div.knows_p2 > div div.bg_l {
+  width: 500px;
+  height: 500px;
+  /* border: 1px solid orange; */
+  position: absolute;
+  top: -140px;
+  left: -253px;
+  border-radius: 50%;
+  background-image: url("../img/knowledge/P3-bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
 }
 
 /* P2 bg_r */
-main div.knows_p2 > div div.bg_r{
-    width: 500px;
-    height: 500px;
-    /* border: 1px solid orange; */
-    position: absolute;
-    bottom: -134px;
-    right: -197px;
-    border-radius: 50%;
-    background-image: url("../img/knowledge/P3-bg2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    overflow: hidden;
+main div.knows_p2 > div div.bg_r {
+  width: 500px;
+  height: 500px;
+  /* border: 1px solid orange; */
+  position: absolute;
+  bottom: -134px;
+  right: -197px;
+  border-radius: 50%;
+  background-image: url("../img/knowledge/P3-bg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
 }
-
 
 /* bg 黑色遮罩 */
 main div.knows_p2 > div div.bg_l::before,
-main div.knows_p2 > div div.bg_r::before{
-content: "";
-width: 500px;
-height: 500px;
-background-color: rgba(0, 0, 0, 0.4);
-position: absolute;
-z-index: 2;
+main div.knows_p2 > div div.bg_r::before {
+  content: "";
+  width: 500px;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  z-index: 2;
 }
 
 /* P2 txt */
 main div.knows_p2 > div div.txt_r,
 main div.knows_p2 > div div.txt_m,
-main div.knows_p2 > div div.txt_l{
-     width:276px;
-    height:328px;
-    border: 3px solid #707070;
-    position: absolute;  
-    z-index: 3;   
-    border-radius: 40px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+main div.knows_p2 > div div.txt_l {
+  width: 276px;
+  height: 328px;
+  border: 3px solid #707070;
+  position: absolute;
+  z-index: 3;
+  border-radius: 40px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-main div.knows_p2 > div div.txt_r{
-    top: -54px;
-    right: 53px;
+main div.knows_p2 > div div.txt_r {
+  top: -54px;
+  right: 53px;
 }
 
-
-main div.knows_p2 > div div.txt_m{
-    top:calc(50% - 164px);
-    left: calc(50% - 138px); 
+main div.knows_p2 > div div.txt_m {
+  top: calc(50% - 164px);
+  left: calc(50% - 138px);
 }
 
-
-main div.knows_p2 > div div.txt_l{
-    left: 53px;
-    bottom: -54px; 
+main div.knows_p2 > div div.txt_l {
+  left: 53px;
+  bottom: -54px;
 }
 
 /* P2 txt 內部設定 */
 /* subtitle */
-main div.knows_p2 > div div p.subtitle{
-    color: black;
-    font-size: 20px;
-    margin-top: 26px;
-    text-decoration:none;
-    border-bottom: 3px solid #f5df2f ;
-    width: 200px;
+main div.knows_p2 > div div p.subtitle {
+  color: black;
+  font-size: 20px;
+  margin-top: 26px;
+  text-decoration: none;
+  border-bottom: 3px solid #f5df2f;
+  width: 200px;
 }
 
 /* 內文 */
-main div.knows_p2 > div div p:nth-child(2){
-    color: black; 
-    font-family: "JhengHei-custom";
-    font-size: 12px;
-    line-height: 16px;
-    margin: 0px 16px 
-} 
+main div.knows_p2 > div div p:nth-child(2) {
+  color: black;
+  font-family: "JhengHei-custom";
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0px 16px;
+}
 
-main div.knows_p2 > div div.txt_r  p:nth-child(2){
-    margin-bottom: 10px;
-} 
+main div.knows_p2 > div div.txt_r p:nth-child(2) {
+  margin-bottom: 5px;
+}
+
+main div.knows_p2 > div div.txt_r div {
+  width: 239px;
+  height: 88px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+main div.knows_p2 > div div.txt_r div img {
+  width: 100%;
+}
 
 /* txt_l單獨設定 */
 
-main div.knows_p2 > div div.txt_l ol{
-    margin: 0px 12px 0px 24px;
-    padding: 0; 
+main div.knows_p2 > div div.txt_l ol {
+  margin: 0px 12px 0px 24px;
+  padding: 0;
 }
 
-main div.knows_p2 > div div.txt_l ol li{
-    color: black; 
-    font-family: "JhengHei-custom";
-    font-size: 12px;
-    line-height: 16px;
-    margin-bottom: 16px;
-} 
-
+main div.knows_p2 > div div.txt_l ol li {
+  color: black;
+  font-family: "JhengHei-custom";
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 16px;
+}
 
 /* P3 */
-main div.knows_p3{
-    /* border: 1px solid red; */
-    width: 1200px;
-    margin: 0 auto 140px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+main div.knows_p3 {
+  /* border: 1px solid red; */
+  width: 1200px;
+  margin: 0 auto 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-main div.knows_p3 p.subtitle{
-    margin: 0 auto 54px;
+main div.knows_p3 p.subtitle {
+  margin: 0 auto 54px;
 }
 
-main div.knows_p3 section{
-    width: 756px;
-    /* border: 1px solid purple; */
-    display: flex;
-    justify-content: space-between;
+main div.knows_p3 section {
+  width: 756px;
+  /* border: 1px solid purple; */
+  display: flex;
+  justify-content: space-between;
 }
 
-
-main div.knows_p3 section > div{
-    width: 182px;
-    /* border: 1px solid gray; */
+main div.knows_p3 section > div {
+  width: 182px;
+  /* border: 1px solid gray; */
 }
 
-main div.knows_p3 section > div > div{
-    width: 182px;
-    height: 182px;
-    border: 1px solid white;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-bottom: 26px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    transition: transform 300ms ease;
+main div.knows_p3 section > div > div {
+  width: 182px;
+  height: 182px;
+  border: 1px solid white;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 26px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  transition: transform 300ms ease;
 }
 
-main div.knows_p3 section > div > div > a{
-    display: block;
-    width: 100%;
-    height: 100%;
+main div.knows_p3 section > div > div > a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
-main div.knows_p3 section > div p{
-    text-align: center;
-    font-size: 20px;
-    margin: 0;
+main div.knows_p3 section > div p {
+  text-align: center;
+  font-size: 20px;
+  margin: 0;
 }
 
 /* P3 單一圖片設定 */
-main div.knows_p3 section > div.txt1 div{
-    background-image: url("../img/knowledge/recommend1.jpg"); 
+main div.knows_p3 section > div.txt1 div {
+  background-image: url("../img/knowledge/recommend1.jpg");
 }
 
-main div.knows_p3 section > div.txt2 div{
-    background-image: url("../img/knowledge/recommend2.jpg");
+main div.knows_p3 section > div.txt2 div {
+  background-image: url("../img/knowledge/recommend2.jpg");
 }
 
-main div.knows_p3 section > div.txt3 div{
-    background-image: url("../img/knowledge/recommend3.jpg");
+main div.knows_p3 section > div.txt3 div {
+  background-image: url("../img/knowledge/recommend3.jpg");
 }
 
 /* hover效果 */
-main div.knows_p3 section > div > div:hover{
-    transform: scale(1.2);
-    box-shadow: 0px 0px 3px 3px white;
+main div.knows_p3 section > div > div:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 0px 3px 3px white;
 }
 
 /* P4 */
-main div.knows_p4{
-    /* border: 1px solid red; */
-    width: 1200px;
-    margin: 0 auto 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+main div.knows_p4 {
+  /* border: 1px solid red; */
+  width: 1200px;
+  margin: 0 auto 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-main div.knows_p4 p.subtitle{
-    margin: 0 auto 54px;
+main div.knows_p4 p.subtitle {
+  margin: 0 auto 54px;
 }
 
-main div.knows_p4 section{
-    width: 605px;
-    /* border: 1px solid purple; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-    align-items: center;
+main div.knows_p4 section {
+  width: 605px;
+  /* border: 1px solid purple; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
 }
 
-
-main div.knows_p4 section > div{
-    width: 605px;
-    height: 200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    margin-bottom: 20px;
+main div.knows_p4 section > div {
+  width: 605px;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
 }
 
-main div.knows_p4 section > div > div{
-    width: 200px;
-    height: 200px;
-    display: inline-block;
-    border: 2px solid white;
-    border-radius: 20px;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* transition: transform 300ms ease; */
+main div.knows_p4 section > div > div {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  border: 2px solid white;
+  border-radius: 20px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* transition: transform 300ms ease; */
 }
-main div.knows_p4 section > div > p{
-    display: inline-block;
-    width: 335px;
-    font-family: "JhengHei-custom";
-    font-size: 10px;
-    overflow: hidden; 
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-
-}
-
-main div.knows_p4 section > div p.class_name{
-    font-size: 20px;
-    font-family: "cwTex-FangSong";
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: inline-block;
-    text-indent: 2rem;
-    margin-bottom: 17px;
+main div.knows_p4 section > div > p {
+  display: inline-block;
+  width: 335px;
+  font-family: "JhengHei-custom";
+  font-size: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
-
+main div.knows_p4 section > div p.class_name {
+  font-size: 20px;
+  font-family: "cwTex-FangSong";
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  text-indent: 2rem;
+  margin-bottom: 17px;
+}
 
 /* P4 課程more連結設定 */
-main div.knows_p4 section > div > a{
-    font-size: 28px;
-    position: absolute;
-    bottom: 30px;
-    right: 130px;
-    text-decoration: none;
-    display: inline-block;
-    overflow: hidden;
-    /* border: 1px solid green; */
-    padding-right: 4px;
-
+main div.knows_p4 section > div > a {
+  font-size: 28px;
+  position: absolute;
+  bottom: 30px;
+  right: 130px;
+  text-decoration: none;
+  display: inline-block;
+  overflow: hidden;
+  /* border: 1px solid green; */
+  padding-right: 4px;
 }
 
-main div.knows_p4 section > div > a:visited{
-    color: white;
+main div.knows_p4 section > div > a:visited {
+  color: white;
 }
 
-main div.knows_p4 section > div > a:hover{
-    color: navy;
-    font-weight: bold;
+main div.knows_p4 section > div > a:hover {
+  color: navy;
+  font-weight: bold;
 }
 
-main div.knows_p4 section > div > a::after{
-    content: "";
-    width: 100px;
-    height: 33px;
-    position: absolute;
-    z-index: -1;
-    bottom: -1px;
-    right: -105px;
-    background-color: #ee8711;
-    transition: all 500ms;
+main div.knows_p4 section > div > a::after {
+  content: "";
+  width: 100px;
+  height: 33px;
+  position: absolute;
+  z-index: -1;
+  bottom: -1px;
+  right: -105px;
+  background-color: #ee8711;
+  transition: all 500ms;
 }
-
 
 /* P4圖片設定 */
-main div.knows_p4 section > div.txt1 > div{
-    background-image: url("../img/class/class1.jpg");
+main div.knows_p4 section > div.txt1 > div {
+  background-image: url("../img/class/class1.jpg");
 }
 
-main div.knows_p4 section > div.txt2 > div{
-    background-image: url("../img/class/class4.jpg");
+main div.knows_p4 section > div.txt2 > div {
+  background-image: url("../img/class/class4.jpg");
 }
 
-main div.knows_p4 section > div.txt3 > div{
-    background-image: url("../img/class/class9.png");
-    background-position: center center;
+main div.knows_p4 section > div.txt3 > div {
+  background-image: url("../img/class/class9.png");
+  background-position: center center;
 }
 
 /* hover效果 */
-main div.knows_p4 section > div:hover a::after{
-    transform: translateX(-100%);
-} 
-
-/* 全部課程按鈕 */
-main div.knows_p4 section > a.go_to_class{
-    display: inline-block;
-    width: 85px;
-    height: 30px;
-    border: 1px solid #d8d8d8;
-    background-color: #262626;
-    color: white;
-    border-radius: 5px;
-    padding: 7px 0px;
-    text-align: center;
-    text-decoration: none;
-    transition: all 500ms ease-in;
+main div.knows_p4 section > div:hover a::after {
+  transform: translateX(-100%);
 }
 
-main div.knows_p4 section > a.go_to_class:hover{
-    background-color: rgba(245, 223, 47, 0.9);
-    color: black;
-    font-weight: bold;
-    border: 1px solid #f5df2f;
+/* 全部課程按鈕 */
+main div.knows_p4 section > a.go_to_class {
+  display: inline-block;
+  width: 85px;
+  height: 30px;
+  border: 1px solid #d8d8d8;
+  background-color: #262626;
+  color: white;
+  border-radius: 5px;
+  padding: 7px 0px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 500ms ease-in;
+}
+
+main div.knows_p4 section > a.go_to_class:hover {
+  background-color: rgba(245, 223, 47, 0.9);
+  color: black;
+  font-weight: bold;
+  border: 1px solid #f5df2f;
 }

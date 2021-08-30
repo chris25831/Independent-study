@@ -84,6 +84,7 @@ header div.menu {
   top: 32px;
   right: 133px;
   transition: right 300ms linear 0ms, transform 300ms ease 150ms;
+  cursor: pointer;
 }
 
 header div.menu span {
@@ -127,7 +128,6 @@ header div.sidebar {
   text-align: center;
   transform-origin: right;
   transform: perspective(1200px) rotateY(-90deg);
-  transition: all 400ms ease;
   position: fixed;
   z-index: 99;
 }

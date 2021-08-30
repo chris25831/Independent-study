@@ -1,3 +1,11 @@
+//sidebar重整出現bug
+window.addEventListener("DOMContentLoaded", function(){
+  // DOM 載入完成之後
+  var sidebar = document.querySelector("div.sidebar");
+  sidebar.style.transition = "all 400ms ease";
+});
+
+
 // hamburger 點擊觸發
 var menu_btn_el = document.getElementsByClassName("menu")[0];
 

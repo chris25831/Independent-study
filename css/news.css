@@ -27,6 +27,7 @@ main div.news_p1 div a {
   display: inline-block;
   width: 100%;
   height: 100%;
+  /* border: 1px solid red; */
 }
 
 main div.news_p1 div.main {
@@ -34,12 +35,15 @@ main div.news_p1 div.main {
   height: 420px;
   /* border: 1px solid red; */
   border-radius: 20px;
-  /* background-image: url("../img/shop/item/135/FujiFilm-Pro400H.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center; */
   position: relative;
   overflow: hidden;
+}
+
+main div.news_p1 div.main a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
 main div.news_p1 div.main img {
@@ -177,6 +181,7 @@ main div.news_p2 div.content div.nav_bar div {
   text-align: center;
   padding: 8px 0px 2px;
   position: absolute;
+  cursor: pointer;
 }
 
 main div.news_p2 div.content div.nav_bar div:nth-child(2) {
@@ -210,6 +215,10 @@ main div.news_p2 div.content div.news_table div.select {
 main div.news_p2 div.content div.news_table div.select div {
   /* border: 1px solid green; */
   margin-right: 17px;
+}
+
+main div.news_p2 div.content div.news_table div.select div label {
+  cursor: pointer;
 }
 
 main div.news_p2 div.content div.news_table div.txt {

@@ -90,4 +90,5 @@ button.line_button:hover {
   color: black;
   background-color: white;
   border: 1px solid white;
+  cursor: pointer;
 }

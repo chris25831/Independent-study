@@ -2,112 +2,100 @@
 @import "./common/header.css";
 @import "./common/footer.css";
 
-body{
-    min-width: 1200px;
+body {
+  min-width: 1200px;
 }
 
-main{   
-    /* border: 1px solid yellow; */
-    width: 1200px;
-    margin: 0 auto;
+main {
+  /* border: 1px solid yellow; */
+  width: 1200px;
+  margin: 0 auto;
 }
 
 /* P1 */
-main div.shop_p1{
-    width: 740px;
-    height: 247px;
-    /* border: 1px solid blue; */
-    margin: 264px auto 248px; 
-    display: flex;
-    justify-content: space-between;
+main div.shop_p1 {
+  width: 740px;
+  height: 247px;
+  /* border: 1px solid blue; */
+  margin: 264px auto 248px;
+  display: flex;
+  justify-content: space-between;
 }
 
-main div.shop_p1 > div{
-    width: 180px;
-    /* border: 1px solid green; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
+main div.shop_p1 > div {
+  width: 180px;
+  /* border: 1px solid green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 
-main div.shop_p1 > div > div{
-    width: 180px;
-    height: 200px;
-    border: 3px solid #707070;
-    border-radius: 30px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+main div.shop_p1 > div > div {
+  width: 180px;
+  height: 200px;
+  border: 3px solid #707070;
+  border-radius: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
-main div.shop_p1 > div > p{
-    margin: 0;
-    text-align: center;
-    font-size: 28px;
-    position: absolute;
-    bottom: -10px;
+main div.shop_p1 > div > p {
+  margin: 0;
+  text-align: center;
+  font-size: 28px;
+  position: absolute;
+  bottom: -10px;
 }
 
 /* P1圖片單一設定 */
-main div.shop_p1 > div > div.toggle1{
-    background-image: url("../img/shop/film.jpg");
+main div.shop_p1 > div > div.toggle1 {
+  background-image: url("../img/shop/film.jpg");
 }
 
-main div.shop_p1 > div > div.toggle2{
-    background-image: url("../img/shop/other.jpg");
+main div.shop_p1 > div > div.toggle2 {
+  background-image: url("../img/shop/other.jpg");
 }
 
-main div.shop_p1 > div > div.toggle3{
-    background-image: url("../img/shop/service.jpg");
+main div.shop_p1 > div > div.toggle3 {
+  background-image: url("../img/shop/service.jpg");
 }
 
 /* hover效果 */
-main div.shop_p1 > div > div:hover{
-    box-shadow: 0px 0px 3px 3px #f5df2f; 
-    border: none;
+main div.shop_p1 > div > div:hover {
+  box-shadow: 0px 0px 3px 3px #f5df2f;
+  border: none;
 }
-
 
 /* TODO: P2 */
-main div.shop_p2{
-    margin-bottom: 188px;
-    width: 1200px;
-    height: 420px;
-    /* border: 1px solid blue;  */
-    position: relative;
-    overflow: hidden;
+main div.shop_p2 {
+  margin-bottom: 188px;
+  width: 1200px;
+  height: 420px;
+  /* border: 1px solid blue;  */
+  position: relative;
+  overflow: hidden;
 }
 
-main div.shop_p2 > div{
-    width: 1200px;
-    height: 420px;
-    /* border: 1px solid red; */
-    position:absolute; 
-    top: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+main div.shop_p2 > div {
+  width: 1200px;
+  height: 420px;
+  /* border: 1px solid red; */
+  position: absolute;
+  top: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
-main div.shop_p2 div:nth-child(2){
-    left: 1200px;
+main div.shop_p2 div:nth-child(2) {
+  left: 1200px;
 }
 
-main div.shop_p2 div:nth-child(3){
-    left: 2400px;
+main div.shop_p2 div:nth-child(3) {
+  left: 2400px;
 }
 
 /* 輪播圖片設定 */
-main div.shop_p2 div:nth-child(1){
-    background-image: url("../img/shop/shop-c-1.png");
-}
-
-main div.shop_p2 div:nth-child(2){
-    background-image: url("../img/shop/shop-c-2.jpg");
-}
-
-main div.shop_p2 div:nth-child(3)){
-    background-image: url("../img/shop/shop-c-3.png");
-}

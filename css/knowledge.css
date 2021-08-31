@@ -20,6 +20,8 @@ main div.knows_p1 {
 
 main div.knows_p1 div p {
   line-height: 24px;
+  font-family: "JhengHei-custom";
+  font-size: 14px;
 }
 
 main div.knows_p1 p.subtitle {
@@ -383,12 +385,12 @@ main div.knows_p4 section > div > p {
 
 main div.knows_p4 section > div p.class_name {
   font-size: 20px;
-  font-family: "cwTex-FangSong";
+  font-family: "cwTex-FangSong", "Monotype Corsiva";
   position: absolute;
   top: 0;
   right: 0;
   display: inline-block;
-  text-indent: 2rem;
+  text-align: center;
   margin-bottom: 17px;
 }
 
@@ -402,7 +404,7 @@ main div.knows_p4 section > div > a {
   display: inline-block;
   overflow: hidden;
   /* border: 1px solid green; */
-  padding-right: 4px;
+  padding-right: 5px;
 }
 
 main div.knows_p4 section > div > a:visited {
@@ -414,10 +416,11 @@ main div.knows_p4 section > div > a:hover {
   font-weight: bold;
 }
 
+/* 課程觸發顯示的橘背景 */
 main div.knows_p4 section > div > a::after {
   content: "";
   width: 100px;
-  height: 33px;
+  height: 100%;
   position: absolute;
   z-index: -1;
   bottom: -1px;

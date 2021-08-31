@@ -12,7 +12,8 @@
 
 @font-face {
   font-family: "Monotype Corsiva";
-  src: local(Monotype Corsiva), local(Segoe UI);
+  src: url(../../fonts/Monotype-Corsiva.TTF);
+  font-display: swap;
   unicode-range: U+00-024F;
 }
 

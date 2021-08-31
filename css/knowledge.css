@@ -6,17 +6,10 @@
 main div.knows_p1 {
   /* border: 1px solid red; */
   width: 1200px;
-  height: 838px;
   margin: 180px auto 190px;
   padding-left: 238px;
-  /* QA1 */
-  padding-top: 1px;
   position: relative;
 }
-
-/* main div.knows_p1 div{
-    border: 1px solid blue;
-} */
 
 main div.knows_p1 div p {
   line-height: 24px;
@@ -26,14 +19,13 @@ main div.knows_p1 div p {
 
 main div.knows_p1 p.subtitle {
   display: inline-block;
-  position: absolute;
   margin: 0px 0px 0px 20px;
 }
 
 /* 文章1 */
 main div.knows_p1 div.txt1 {
   display: flex;
-  margin: 32px 0 78px;
+  margin: -5px 0px 78px 0px;
   align-items: center;
 }
 

@@ -194,7 +194,7 @@ main div.index_p3 div.owner section p.content a {
   display: inline-block;
   position: absolute;
   /* border: 1px solid goldenrod;  */
-  bottom: 3px;
+  bottom: 10px;
   font-family: "Monotype Corsiva";
   font-size: 18px;
 }

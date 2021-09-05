@@ -87,17 +87,324 @@ main div.shop_p2 {
   position: relative;
   overflow: hidden;
 }
+main div.shop_p2 > div {
+  width: 100%;
+  height: 100%;
+}
 
 main div.shop_p2 > div img {
   height: 100%;
 }
 
-main div.shop_p2 > div img:nth-child(2) {
+/* main div.shop_p2 > div img:nth-child(2) {
   left: 1200px;
 }
 
 main div.shop_p2 > div img:nth-child(3) {
   left: 2400px;
-}
+} */
 
 /* P3 */
+main div.shop_p3 {
+  width: 1160px;
+  margin: 0 auto;
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main div.shop_p3 > p {
+  margin: 0px auto 60px;
+}
+/* 分類表 */
+main div.shop_p3 div.filter {
+  width: 485px;
+  border: 1px solid red;
+  font-family: "JhengHei-custom";
+}
+
+main div.shop_p3 div.filter form > div {
+  display: flex;
+  flex-direction: column;
+}
+
+main div.shop_p3 div.filter form > div > div {
+  display: flex;
+  border: 1px solid blue;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+main div.shop_p3 div.filter form > div > div:last-child {
+  margin: 30px 0px 0px 0px;
+}
+
+main div.shop_p3 div.filter form > div > div p {
+  width: 100px;
+  height: 100%;
+  text-align: center;
+  margin-right: 40px;
+  border-right: 2px solid white;
+}
+
+/* 顏色 */
+main div.shop_p3 div.filter form > div > div.color > div {
+  margin-right: 15px;
+}
+
+main div.shop_p3 div.filter form > div > div.color > div > label {
+  display: inline-block;
+  padding: 0;
+  cursor: pointer;
+}
+
+main
+  div.shop_p3
+  div.filter
+  form
+  > div
+  > div.color
+  > div
+  > label
+  input[type="checkbox"] {
+  display: none;
+}
+
+main
+  div.shop_p3
+  div.filter
+  form
+  > div
+  > div.color
+  > div
+  > label
+  input[type="checkbox"]
+  + span {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 8px 30px;
+  user-select: none;
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+}
+
+main
+  div.shop_p3
+  div.filter
+  form
+  > div
+  > div.color
+  > div
+  > label
+  input[type="checkbox"]:checked
+  + span {
+  color: yellow;
+  background-color: #707070;
+}
+
+/* 感光度 */
+main div.shop_p3 div.filter form > div > div.iso select {
+  width: 92px;
+  border-radius: 15px;
+  padding: 5px 0px 5px 25px;
+  cursor: pointer;
+}
+
+/* 規格品牌 */
+main div.shop_p3 div.filter form > div > div.brand > div.brand_select {
+  width: 300px;
+  /* border: 1px solid brown; */
+  position: relative;
+}
+
+main
+  div.shop_p3
+  div.filter
+  form
+  > div
+  > div.brand
+  > div.brand_select
+  > div:first-child {
+  /* border: 1px solid green; */
+  background-color: white;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+main
+  div.shop_p3
+  div.filter
+  form
+  > div
+  > div.brand
+  > div.brand_select
+  > div:first-child
+  span {
+  display: block;
+  width: 100%;
+  height: 36px;
+  text-align: center;
+  padding: 10px 0px;
+  color: black;
+  position: relative;
+  z-index: 2;
+}
+
+main
+  div.shop_p3
+  div.filter
+  form
+  > div
+  > div.brand
+  > div.brand_select
+  > div:nth-child(2) {
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+}
+
+/* 規格品牌-下拉符號 */
+main
+  div.shop_p3
+  div.filter
+  form
+  > div
+  > div.brand
+  > div.brand_select
+  > div:first-child
+  > div {
+  position: absolute;
+  z-index: 1;
+  color: black;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+}
+
+main
+  div.shop_p3
+  div.filter
+  form
+  > div
+  > div.brand
+  > div.brand_select
+  > div:nth-child(2) {
+  /* border: 1px solid yellow; */
+  width: 300px;
+  background-color: white;
+  position: absolute;
+  top: 38px;
+  left: 0;
+  display: flex;
+}
+
+main
+  div.shop_p3
+  div.filter
+  form
+  > div
+  > div.brand
+  > div.brand_select
+  > div:nth-child(2)
+  > select {
+  width: 120px;
+}
+
+main
+  div.shop_p3
+  div.filter
+  form
+  > div
+  > div.brand
+  > div.brand_select
+  > div:nth-child(2)
+  > select
+  option:hover {
+  color: white;
+  background-color: #3297fd;
+}
+
+main
+  div.shop_p3
+  div.filter
+  form
+  > div
+  > div.brand
+  > div.brand_select
+  > div:nth-child(2)
+  > div.img_place {
+  min-height: 180px;
+  /* border: 1px solid pink; */
+  flex-grow: 1;
+  position: relative;
+}
+
+main
+  div.shop_p3
+  div.filter
+  form
+  > div
+  > div.brand
+  > div.brand_select
+  > div:nth-child(2)
+  > div.img_place
+  > ul {
+  color: black;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+main
+  div.shop_p3
+  div.filter
+  form
+  > div
+  > div.brand
+  > div.brand_select
+  > div:nth-child(2)
+  > div.img_place
+  > ul
+  > li {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+main
+  div.shop_p3
+  div.filter
+  form
+  > div
+  > div.brand
+  > div.brand_select
+  > div:nth-child(2)
+  > div.img_place
+  > ul
+  > li
+  > img {
+  width: 150px;
+}
+
+/* P3送出按鈕 */
+
+main div.shop_p3 div.filter form > div > div.button {
+  justify-content: center;
+}
+
+main div.shop_p3 div.filter form > div > div.button > div > button {
+  padding: 8px 5px;
+  border-radius: 5px;
+}
+
+main div.shop_p3 div.filter form > div > div.button > div > button:first-child {
+  margin-right: 20px;
+}

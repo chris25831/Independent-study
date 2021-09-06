@@ -82,32 +82,55 @@ main div.shop_p1 > div > div:hover {
 main div.shop_p2 {
   margin-bottom: 45px;
   width: 1200px;
-  height: 420px;
   border: 1px solid blue;
   position: relative;
   overflow: hidden;
 }
 main div.shop_p2 > div {
   width: 100%;
-  height: 100%;
+  height: 420px;
 }
 
 main div.shop_p2 > div img {
+  width: 100%;
   height: 100%;
 }
 
-/* main div.shop_p2 > div img:nth-child(2) {
-  left: 1200px;
+/* TODO:slick修改 */
+ul.slick-dots {
+  bottom: 0;
 }
 
-main div.shop_p2 > div img:nth-child(3) {
-  left: 2400px;
-} */
+/* 按鈕共同設定 */
+main div.shop_p2 > button {
+  z-index: 3;
+  width: 70px;
+  height: 420px;
+}
+
+main div.shop_p2 > button::before {
+  content: "";
+}
+
+main div.shop_p2 > button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* prev */
+
+main div.shop_p2 > button.slick-prev {
+  left: 0;
+}
+
+/* next */
+main div.shop_p2 > button.slick-next {
+  right: 0;
+}
 
 /* P3 */
 main div.shop_p3 {
   width: 1160px;
-  margin: 0 auto;
+  margin: 0 auto 45px;
   border: 1px solid green;
   display: flex;
   flex-direction: column;
@@ -120,6 +143,7 @@ main div.shop_p3 > p {
 main div.shop_p3 div.filter {
   width: 485px;
   border: 1px solid red;
+  margin-bottom: 60px;
   font-family: "JhengHei-custom";
 }
 
@@ -407,4 +431,54 @@ main div.shop_p3 div.filter form > div > div.button > div > button {
 
 main div.shop_p3 div.filter form > div > div.button > div > button:first-child {
   margin-right: 20px;
+}
+
+/* P3 底片carousel */
+main div.shop_p3 div.p3_content {
+  width: 870px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  border: 1px solid yellow;
+}
+
+/* slick */
+div.slick-slide > div > div {
+  border: 1px solid blue;
+  /* 圖片置中 */
+  padding-left: 12px;
+  position: relative;
+}
+
+div.slick-slide > div > div > a {
+  display: block;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  left: 12px;
+}
+
+div.slick-slide img {
+  width: 150px;
+  height: 150px;
+}
+
+/* 按鈕共同設定 */
+main div.p3_content > button {
+  width: 60px;
+  height: 60px;
+}
+
+main div.p3_content > button::before {
+  font-size: 60px;
+}
+
+/* prev  */
+main div.p3_content > button.slick-prev {
+  left: -80px;
+}
+
+/*  next  */
+main div.p3_content > button.slick-next {
+  right: -80px;
 }

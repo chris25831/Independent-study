@@ -16,7 +16,7 @@ main {
 main > div.line {
   width: 100%;
   height: 100px;
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
   padding-left: 50%;
   margin-bottom: 45px;
 }
@@ -24,7 +24,6 @@ main > div.line {
 /* P1 */
 main div.shop_p1 {
   width: 740px;
-  height: 247px;
   /* border: 1px solid blue; */
   margin: 264px auto 103px;
   display: flex;
@@ -49,6 +48,14 @@ main div.shop_p1 > div > div {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+main div.shop_p1 > div > div > a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 main div.shop_p1 > div > p {
@@ -78,11 +85,11 @@ main div.shop_p1 > div > div:hover {
   border: none;
 }
 
-/* TODO: P2 */
+/* P2 */
 main div.shop_p2 {
   margin-bottom: 45px;
   width: 1200px;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   position: relative;
   overflow: hidden;
 }
@@ -129,9 +136,9 @@ main div.shop_p2 > button.slick-next {
 
 /* P3 */
 main div.shop_p3 {
-  width: 1160px;
+  width: 1030px;
   margin: 0 auto 45px;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -142,7 +149,7 @@ main div.shop_p3 > p {
 /* 分類表 */
 main div.shop_p3 div.filter {
   width: 485px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin-bottom: 60px;
   font-family: "JhengHei-custom";
 }
@@ -154,7 +161,7 @@ main div.shop_p3 div.filter form > div {
 
 main div.shop_p3 div.filter form > div > div {
   display: flex;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   margin-bottom: 15px;
   align-items: center;
 }
@@ -427,6 +434,8 @@ main div.shop_p3 div.filter form > div > div.button {
 main div.shop_p3 div.filter form > div > div.button > div > button {
   padding: 8px 5px;
   border-radius: 5px;
+  border: none;
+  cursor: pointer;
 }
 
 main div.shop_p3 div.filter form > div > div.button > div > button:first-child {
@@ -438,18 +447,52 @@ main div.shop_p3 div.p3_content {
   width: 870px;
   margin: 0 auto;
   padding-bottom: 20px;
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
 }
 
-/* slick */
-div.slick-slide > div > div {
-  border: 1px solid blue;
-  /* 圖片置中 */
+/* slick (P3.P4) */
+
+/* 圖片 */
+div.slick-slide img {
+  width: 150px;
+  height: 150px;
+}
+
+/* 按鈕 */
+main div.p3_content > button,
+main div.p4_content > button {
+  width: 60px;
+  height: 60px;
+}
+
+main div.p3_content > button::before,
+main div.p4_content > button::before {
+  font-size: 60px;
+}
+
+/* prev  */
+main div.p3_content > button.slick-prev,
+main div.p4_content > button.slick-prev {
+  left: -80px;
+}
+
+/*  next  */
+main div.p3_content > button.slick-next,
+main div.p4_content > button.slick-next {
+  right: -80px;
+}
+
+/* 圖片置中 */
+div.p3_content div.slick-slide > div > div,
+div.p4_content div.slick-slide {
+  /* border: 1px solid blue; */
   padding-left: 12px;
   position: relative;
 }
 
-div.slick-slide > div > div > a {
+/* a標籤 */
+div.p3_content div.slick-slide > div > div > a,
+div.p4_content div.slick-slide > a {
   display: block;
   width: 150px;
   height: 150px;
@@ -458,27 +501,25 @@ div.slick-slide > div > div > a {
   left: 12px;
 }
 
-div.slick-slide img {
-  width: 150px;
-  height: 150px;
+div.p3_content div.slick-slide > div > div > a:hover,
+div.p4_content div.slick-slide > a:hover {
+  border: 3px solid #f5df2f;
 }
 
-/* 按鈕共同設定 */
-main div.p3_content > button {
-  width: 60px;
-  height: 60px;
+/* P4 */
+main div.shop_p4 {
+  width: 1030px;
+  margin: 0 auto 114px;
+  /* border: 1px solid green; */
 }
 
-main div.p3_content > button::before {
-  font-size: 60px;
+main div.shop_p4 > p {
+  margin: 0px auto 104px;
 }
 
-/* prev  */
-main div.p3_content > button.slick-prev {
-  left: -80px;
-}
-
-/*  next  */
-main div.p3_content > button.slick-next {
-  right: -80px;
+main div.shop_p4 div.p4_content {
+  width: 870px;
+  margin: 0 auto;
+  padding-bottom: 25px;
+  /* border: 1px solid yellow; */
 }

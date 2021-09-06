@@ -1,3 +1,13 @@
+// P1 錨點效果
+$('.toggle1').click(function(){
+  $('html,body,main').animate({scrollTop:$('.target1').offset().top}, 800);
+});
+
+$('.toggle2').click(function(){
+  $('html,body,main').animate({scrollTop:$('.target2').offset().top}, 800);
+});
+
+
 // P2 商品促銷carousel
 
 $('.shop_p2').slick({
@@ -98,7 +108,7 @@ cancelall_el.addEventListener("click", function(){
   placeholder_value.innerHTML = "請選擇品牌";
 })
 
-// P3 商品促銷carousel
+// P3 底片carousel
 
 $('.p3_content').slick({
   dots: true,
@@ -106,4 +116,14 @@ $('.p3_content').slick({
   slidesPerRow: 5
 
 });
+
+// P4 附件carousel
+
+$('.p4_content').slick({
+  dots: true,  
+  slidesToShow: 5,
+  slidesToScroll: 2
+
+});
+
 

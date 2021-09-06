@@ -1,0 +1,13 @@
+@import "./common/common.css";
+@import "./common/header.css";
+@import "./common/footer.css";
+
+body {
+  min-width: 1200px;
+}
+
+main {
+  /* border: 1px solid yellow; */
+  width: 1200px;
+  margin: 0 auto;
+}

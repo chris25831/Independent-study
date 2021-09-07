@@ -325,13 +325,14 @@ main
   > div.brand
   > div.brand_select
   > div:nth-child(2) {
-  /* border: 1px solid yellow; */
+  border: 2px solid gray;
   width: 300px;
   background-color: white;
   position: absolute;
   top: 38px;
   left: 0;
   display: flex;
+  z-index: 3;
 }
 
 main
@@ -344,6 +345,7 @@ main
   > div:nth-child(2)
   > select {
   width: 120px;
+  border: none;
 }
 
 main

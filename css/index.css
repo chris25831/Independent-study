@@ -62,6 +62,24 @@ main div.index_frame {
   background-size: cover;
   background-position: center center;
 }
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  main div.index_frame {
+    min-width: 0;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  main div.index_frame {
+    min-width: 0;
+    max-width: 100%;
+    height: 100vh;
+  }
+}
+@media screen and (max-height: 469.98px) {
+  main div.index_frame {
+    height: 470px;
+  }
+}
 
 main div.index_frame div.index {
   width: 100%;
@@ -70,32 +88,59 @@ main div.index_frame div.index {
   top: 0;
   left: 0;
   background-color: rgba(255, 255, 255, 0.6);
+  /* border: 1px solid red; */
+}
+@media screen and (max-width: 767.98px) {
+  main div.index_frame div.index {
+    height: 100vh;
+  }
+}
+@media screen and (max-height: 469.98px) {
+  main div.index_frame div.index {
+    height: 470px;
+  }
 }
 
-main div.index_frame div.index div.logo_index {
-  position: absolute;
-  z-index: 2;
+main div.index_frame > div.index div.logo_index {
   font-size: 0;
-  top: calc(50% - 131px);
-  left: calc(50% - 223px);
+  position: absolute;
+  width: 447px;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* border: 1px solid yellow; */
+}
+@media screen and (max-width: 767.98px) {
+  main div.index_frame > div.index div.logo_index {
+    width: 357px;
+  }
 }
 
-main div.index_frame div.index div.logo_index img {
-  width: 447px;
-  height: 262px;
+main div.index_frame > div.index div.logo_index img {
+  width: 100%;
 }
 
 main div.scroll_down {
   position: absolute;
   z-index: 3;
-  bottom: 60px;
-  left: calc(50% - 50px);
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 0;
+  width: 111px;
+  height: 62px;
+  /* border: 1px solid yellow; */
+}
+
+@media screen and (max-width: 767.98px) {
+  main div.scroll_down {
+    bottom: 5%;
+  }
 }
 
 main div.scroll_down img {
-  width: 111px;
-  height: 62px;
+  width: 100%;
 }
 
 /* P2 */
@@ -103,25 +148,55 @@ main div.index_p2 {
   width: 805px;
   height: 576px;
   margin: 85px auto 115px;
-  border: 1px solid #262626;
   background-image: url("../img/index/P2bg.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-origin: border-box;
   background-position: center center;
   display: flex;
+  border: 1px solid #262626;
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  main div.index_p2 {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  main div.index_p2 {
+    max-width: 100%;
+  }
 }
 
 main div.index_p2 section {
   background-color: #262626;
-  height: 300px;
   margin: auto 0;
   text-align: center;
+}
+@media screen and (max-width: 767.98px) {
+  main div.index_p2 {
+    max-width: 100%;
+  }
 }
 
 main div.index_p2 section p.slogan {
   font-size: 40px;
   margin-bottom: 65px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  main div.index_p2 section p.slogan {
+    font-size: 38px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  main div.index_p2 section p.slogan {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 629.98px) {
+  main div.index_p2 section p.slogan span {
+    display: block;
+  }
 }
 
 main div.index_p2 section p.content {
@@ -131,36 +206,93 @@ main div.index_p2 section p.content {
   margin-bottom: 40px;
   color: #d8d8d8;
 }
+@media screen and (max-width: 767.98px) {
+  main div.index_p2 section p.content {
+    padding: 0 10px;
+    font-size: 12px;
+    text-align: left;
+  }
+}
+
+main div.index_p2 section p.content span {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
 
 /* P3 */
 main div.index_p3 {
   width: 885px;
   margin: 0 auto 120px;
+  /* border: 1px solid yellow; */
+  overflow-x: hidden;
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  main div.index_p3 {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  main div.index_p3 {
+    max-width: 100%;
+  }
 }
 
 main div.index_p3 > div {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
+@media screen and (max-width: 767.98px) {
+  main div.index_p3 > div {
+    flex-direction: column;
+  }
+}
+
 main div.index_p3 div.about {
   margin-bottom: 100px;
 }
 
-main div.index_p3 div > div {
-  flex-grow: 1;
+main div.index_p3 div.about > div {
+  margin-right: 20px;
 }
+@media screen and (max-width: 767.98px) {
+  main div.index_p3 div.about > div {
+    margin: 0 auto;
+    order: 2;
+  }
 
+  main div.index_p3 div.about > section {
+    margin-bottom: 10px;
+  }
+}
 /* P3共同圖片大小 */
 main div.index_p3 div div {
   width: 400px;
+  /* border: 1px solid red; */
+  font-size: 0;
 }
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  main div.index_p3 div div {
+    max-width: 350px;
+  }
+}
+
 main div.index_p3 div img {
-  width: 400px;
+  width: 100%;
   border-radius: 5px;
 }
 
 main div.index_p3 div.owner section {
   margin-right: 14px;
+  /* border: 1px solid pink; */
+}
+@media screen and (max-width: 767.98px) {
+  main div.index_p3 div.owner section {
+    margin: 0 auto 5px;
+    padding: 0 10px;
+    max-width: 100%;
+  }
 }
 
 main div.index_p3 div section p.subtitle {
@@ -174,10 +306,15 @@ main div.index_p3 div section p.content {
 
 main div.index_p3 div.owner section p.content {
   width: 474px;
-  height: 153px;
   /* border: 1px solid hotpink; */
   position: relative;
 }
+@media screen and (max-width: 767.98px) {
+  main div.index_p3 div.owner section p.content {
+    max-width: 100%;
+  }
+}
+
 /* 內文最後...設定 */
 main div.index_p3 div.owner section p.content span.lastline {
   display: inline-block;
@@ -194,7 +331,7 @@ main div.index_p3 div.owner section p.content a {
   display: inline-block;
   position: absolute;
   /* border: 1px solid goldenrod;  */
-  bottom: 10px;
+  bottom: 4px;
   font-family: "Monotype Corsiva";
   font-size: 18px;
 }
@@ -213,68 +350,147 @@ main div.index_p4 {
   margin: 0 auto 135px;
   /* border: 1px solid tomato; */
 }
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  main div.index_p4 {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  main div.index_p4 {
+    max-width: 100%;
+  }
+}
 
-main div.index_p4 p.subtitle {
+main div.index_p4 > p.subtitle {
   margin: 0 auto 30px;
 }
 
-main div.index_p4 div.content {
+main div.index_p4 > div.content {
   display: grid;
   grid-template-columns: auto auto 250px;
   grid-auto-rows: 520px;
 }
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  main div.index_p4 > div.content {
+    grid-template-columns: auto auto 220px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  main div.index_p4 > div.content {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 /* P4圖片共同設定 */
-main div.index_p4 div.content div {
+main div.index_p4 > div.content > div {
   width: 250px;
   height: 250px;
   /* border: 1px solid blue; */
-  /* background-repeat: no-repeat;
-  background-size: cover; */
   position: relative;
   box-shadow: 0px 5px 5px 3px black;
   border-radius: 5px;
 }
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  main div.index_p4 > div.content > div {
+    width: 220px;
+    height: 220px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  main div.index_p4 > div.content > div {
+    width: 220px;
+    height: 220px;
+    margin-bottom: 80px;
+  }
+}
 
-main div.index_p4 div.content div div {
+main div.index_p4 > div.content > div > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+main div.index_p4 > div.content > div > div {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
 
-main div.index_p4 div.content div div img {
+main div.index_p4 > div.content > div > div img {
   height: 100%;
 }
 
-main div.index_p4 div.content div:nth-child(1) {
+main div.index_p4 > div.content > div:nth-child(1) {
   align-self: start;
 }
 
-main div.index_p4 div.content div:nth-child(2) {
+main div.index_p4 > div.content > div:nth-child(2) {
   align-self: center;
 }
 
-main div.index_p4 div.content div:nth-child(3) {
+main div.index_p4 > div.content > div:nth-child(3) {
   align-self: end;
 }
 
-main div.index_p4 div.content div p {
+@media screen and (max-width: 767.98px) {
+  main div.index_p4 > div.content > div:nth-child(1) {
+    align-self: center;
+  }
+
+  main div.index_p4 > div.content > div:nth-child(2) {
+    align-self: center;
+  }
+
+  main div.index_p4 > div.content > div:nth-child(3) {
+    align-self: center;
+  }
+}
+
+main div.index_p4 > div.content > div p {
   position: absolute;
   z-index: -1;
   width: 250px;
-  height: 250px;
+  height: 25px;
   text-align: center;
-  font-size: 20ox;
+  font-size: 20px;
   margin: 0;
-  top: calc(50% - 10px);
+  top: 80%;
   opacity: 0;
   transition: transform 1s, opacity 2s;
+  /* border: 1px solid yellow; */
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  main div.index_p4 > div.content > div p {
+    width: 100%;
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  main div.index_p4 > div.content > div p {
+    width: 100%;
+    font-size: 17px;
+    z-index: 1;
+    top: 110%;
+    opacity: 1;
+  }
 }
 
 /* hover效果 */
-main div.index_p4 div.content div:hover p {
-  transform: translateY(65%);
+main div.index_p4 > div.content > div:hover p {
+  transform: translateY(250%);
   opacity: 1;
+}
+
+@media screen and (max-width: 767.98px) {
+  main div.index_p4 > div.content > div:hover p {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /* P5 */
@@ -282,6 +498,19 @@ main div.index_p5 {
   width: 872px;
   margin: 0 auto 40px;
   /* border: 1px solid green; */
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  main div.index_p5 {
+    max-width: 100%;
+    margin-bottom: 80px;
+    padding: 0 15px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  main div.index_p5 {
+    max-width: 100%;
+    margin-bottom: 80px;
+  }
 }
 
 main div.index_p5 p.subtitle {
@@ -296,11 +525,17 @@ main div.index_p5 div.content {
   justify-content: space-between;
   align-content: space-between;
 }
+@media screen and (max-width: 767.98px) {
+  main div.index_p5 div.content {
+    overflow: auto;
+    max-width: 100%;
+    padding: 0 30px;
+  }
+}
 
 /* P5圖片設定 */
 main div.index_p5 div.content div.item {
   width: 250px;
-  height: 250px;
   /* border: 1px solid blue; */
   background-color: white;
   display: flex;
@@ -309,23 +544,52 @@ main div.index_p5 div.content div.item {
   position: relative;
   overflow: hidden;
 }
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  main div.index_p5 div.content div.item {
+    width: 240px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  main div.index_p5 div.content div.item {
+    max-width: 45%;
+    margin-bottom: 20px;
+  }
 
-main div.index_p5 div.content div.item img {
+  main div.index_p5 div.content div.item:nth-child(5),
+  main div.index_p5 div.content div.item:nth-child(6) {
+    margin-bottom: 0px;
+  }
+}
+
+main div.index_p5 div.content div.item > img {
   width: 100%;
+}
+
+/* P5 a連結 */
+main div.index_p5 div.content div.item > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* border: 1px solid red; */
+  z-index: 2;
 }
 
 /* P5文字設定 */
 main div.index_p5 div.content div.item div.item_intro {
-  width: 250px;
+  width: 100%;
   height: 80px;
   margin: 0;
   /* border: 1px solid green; */
-  position: absolute;
   background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
   left: 0;
   bottom: -80px;
+  z-index: 1;
   font-family: "JhengHei-custom";
-  transition: transform 1s;
+  transition: transform 1s ease-out;
 }
 
 main div.index_p5 div.content div.item div.item_intro p {
@@ -340,7 +604,8 @@ main div.index_p5 div.content div.item div.item_intro p:nth-child(1) {
 main div.index_p5 div.content div.item div.item_intro p:nth-child(2) {
   font-size: 12px;
   /* border: 1px solid yellow; */
-  width: 250px;
+  width: 95%;
+  margin: 0 auto;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;

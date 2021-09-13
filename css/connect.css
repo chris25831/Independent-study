@@ -7,7 +7,18 @@ body {
   position: relative;
   /* border: 1px solid yellow; */
 }
-
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  body {
+    min-width: 0;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  body {
+    min-width: 0;
+    max-width: 100%;
+  }
+}
 /* 背景圖L */
 body div.connect_bg_l {
   position: absolute;
@@ -21,22 +32,10 @@ body div.connect_bg_l {
   background-repeat: no-repeat;
 }
 
-body div.connect_bg_l::before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: -3px;
-  width: 256px;
-  height: 639px;
-  /* border: 1px solid yellow; */
-  z-index: 2;
-  overflow: hidden;
-}
-
 /* 背景圖R */
 body div.connect_bg_r {
   position: absolute;
-  top: 1619px;
+  top: 1640px;
   right: 0px;
   width: 256px;
   height: 600px;
@@ -45,43 +44,91 @@ body div.connect_bg_r {
   background-size: contain;
   background-repeat: no-repeat;
 }
+@media screen and (max-width: 767.98px) {
+  body div.connect_bg_l,
+  body div.connect_bg_r {
+    display: none;
+  }
+}
 
 /* P1 */
 main div.connect_p1_frame {
   width: 1200px;
-  height: 364px;
   /* border: 1px solid blue; */
   margin: 148px auto 122px;
   padding-left: 424px;
 }
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  main div.connect_p1_frame {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  main div.connect_p1_frame {
+    max-width: 100%;
+    padding: 0;
+  }
+}
 
 main div.connect_p1_frame div.connect_p1 {
   width: 533px;
-  height: 100%;
+  /* height: 100%; */
   display: flex;
   flex-direction: column;
   /* border: 1px solid yellow; */
-  position: relative;
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  main div.connect_p1_frame div.connect_p1 {
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 85px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  main div.connect_p1_frame div.connect_p1 {
+    max-width: 100%;
+    margin: 0 auto;
+  }
 }
 
 main div.connect_p1_frame div.connect_p1 p.subtitle {
-  margin: 0px auto 28px;
-  position: absolute;
-  left: 148px;
+  margin: 0px 0px 28px 150px;
+  display: inline-block;
+  text-align: left;
+}
+@media screen and (max-width: 767.98px) {
+  main div.connect_p1_frame div.connect_p1 p.subtitle {
+    margin: 0px 0px 15px 0px;
+    display: block;
+    text-align: center;
+  }
 }
 
 main div.connect_p1_frame div.connect_p1 > div {
   /* border: 1px solid green; */
   width: 100%;
-  height: 188px;
-  margin-top: 58px;
   padding-left: 71px;
+  flex-shrink: 0;
+}
+@media screen and (max-width: 767.98px) {
+  main div.connect_p1_frame div.connect_p1 > div {
+    /* text-align: center; */
+    padding-left: 150px;
+  }
 }
 
 main div.connect_p1_frame div.connect_p1 > div > div {
   font-size: 20px;
   margin-bottom: 32px;
   position: relative;
+  color: #f5df2f;
+  cursor: pointer;
+  /* border: 1px solid red; */
+}
+
+main div.connect_p1_frame div.connect_p1 > div > div:last-child {
+  margin-bottom: 0px;
 }
 
 main div.connect_p1_frame div.connect_p1 > div > div::before {
@@ -94,6 +141,13 @@ main div.connect_p1_frame div.connect_p1 > div > div::before {
   left: -22px;
 }
 
+main div.connect_p1_frame div.connect_p1 > div > div > p {
+  margin-bottom: 0;
+  color: white;
+  font-size: 18px;
+  display: none;
+}
+
 /* P2 */
 main div.connect_p2_frame {
   min-width: 1200px;
@@ -101,10 +155,34 @@ main div.connect_p2_frame {
   margin-bottom: 90px;
   /* border: 1px solid blue; */
 }
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  main div.connect_p2_frame {
+    min-width: 0;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  main div.connect_p2_frame {
+    min-width: 0;
+    max-width: 100%;
+  }
+}
 
 main div.connect_p2_frame iframe {
   min-width: 100%;
   height: 100%;
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  main div.connect_p2_frame iframe {
+    min-width: 0;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  main div.connect_p2_frame iframe {
+    min-width: 0;
+    width: 100%;
+  }
 }
 
 /* P3 */
@@ -116,6 +194,19 @@ main div.connect_p3_frame {
   padding-left: 324px;
   position: relative;
 }
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  main div.connect_p3_frame {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  main div.connect_p3_frame {
+    max-width: 100%;
+    padding: 0;
+    height: 100%;
+  }
+}
 
 main div.connect_p3_frame div.connect_p3 {
   width: 724px;
@@ -124,6 +215,18 @@ main div.connect_p3_frame div.connect_p3 {
   flex-direction: column;
   justify-content: space-between;
   /* border: 1px solid yellow; */
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  main div.connect_p3_frame div.connect_p3 {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  main div.connect_p3_frame div.connect_p3 {
+    margin: 0 auto;
+    max-width: 100%;
+  }
 }
 
 main div.connect_p3_frame div.connect_p3 p.subtitle {
@@ -142,6 +245,19 @@ main div.connect_p3_frame div.connect_p3 div.content {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  main div.connect_p3_frame div.connect_p3 div.content {
+    justify-content: end;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  main div.connect_p3_frame div.connect_p3 div.content {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    flex-shrink: 0;
+  }
+}
 
 main div.connect_p3_frame div.connect_p3 div.content div:nth-child(1) {
   width: 192px;
@@ -151,6 +267,17 @@ main div.connect_p3_frame div.connect_p3 div.content div:nth-child(1) {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  main div.connect_p3_frame div.connect_p3 div.content div:nth-child(1) {
+    margin-right: 70px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  main div.connect_p3_frame div.connect_p3 div.content div:nth-child(1) {
+    width: 363px;
+    margin-bottom: 20px;
+  }
 }
 
 main div.connect_p3_frame div.connect_p3 div.content div:nth-child(2) {
@@ -171,9 +298,18 @@ main div.connect_p3_frame div.connect_p3 div.content div p span {
 /* P4 */
 main div.connect_p4_frame {
   width: 1200px;
-  margin-bottom: 138px;
   margin: 0 auto 95px;
   /* border: 1px solid blue; */
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  main div.connect_p4_frame {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  main div.connect_p4_frame {
+    max-width: 100%;
+  }
 }
 
 main div.connect_p4_frame div.connect_p4 {
@@ -196,4 +332,18 @@ main div.connect_p4_frame div.connect_p4 div form input {
 main div.connect_p4_frame div.connect_p4 div form textarea {
   border-radius: 5px;
   resize: none;
+}
+
+main div.connect_p4_frame div.connect_p4 div form input.submit_btn {
+  cursor: pointer;
+  padding: 4px 12px;
+}
+@media screen and (max-width: 767.98px) {
+  main div.connect_p4_frame div.connect_p4 div form input.submit_btn {
+    position: relative;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    margin-top: 10px;
+  }
 }

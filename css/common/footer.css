@@ -3,6 +3,23 @@ footer {
   height: 200px;
   background-color: #efefef;
   position: relative;
+  /* border: 1px solid yellow; */
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  footer {
+    min-width: 0;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  footer {
+    display: flex;
+    min-width: 0;
+    max-width: 100%;
+    justify-content: center;
+  }
 }
 
 footer p {
@@ -10,22 +27,37 @@ footer p {
 }
 
 footer > div {
-  width: 1200px;
+  max-width: 1200px;
   height: 200px;
   display: flex;
   margin: 0 auto;
   padding: 0 100px;
   justify-content: space-between;
+  /* border: 1px solid green; */
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  footer > div {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  footer > div {
+    display: inline-block;
+    /* max-width: 768px; */
+    padding: 0;
+  }
 }
 
 /* information內部設定 */
-footer div div.information {
+footer > div div.information {
   display: flex;
   height: 150px;
-  margin: auto 0;
+  margin: 25px 0;
   padding: 0;
   /* border: 1px solid green; */
-  margin-right: 125px;
+  align-items: center;
 }
 
 footer div div.information div:nth-child(1) {
@@ -34,7 +66,18 @@ footer div div.information div:nth-child(1) {
   display: inline-block;
   /* border: 1px solid blueviolet; */
   background-image: url("../../img/footer/FancyMapsMap.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
   margin-right: 20px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  footer div div.information div:nth-child(1) {
+    width: 120px;
+    height: 120px;
+    margin-right: 10px;
+  }
 }
 
 footer div div.information div:nth-child(2) {
@@ -56,13 +99,26 @@ footer div div.schema {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 430px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  footer div div.schema {
+    width: 378px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  footer div div.schema {
+    display: none;
+  }
 }
 
 /* grid排版 */
 footer div div.schema div:nth-child(1) {
   /* border: 1px solid darkorange; */
   display: grid;
-  grid-template-areas: ". . . ." ". . film film" "know know other other" "class class services services";
+  grid-template-areas: ". . . ." ". . film ." ". know other ." ". class services .";
   gap: 10px 20px;
   margin-top: 25px;
 }
@@ -74,38 +130,18 @@ footer div div.schema div p {
 }
 
 /* grid文字排版 */
-footer div div.schema div p.word7 {
-  grid-area: film;
-  text-align: left;
-  text-indent: 2em;
-}
-
-footer div div.schema div p.word8 {
-  grid-area: know;
-  direction: rtl;
-  text-align: right;
-  text-indent: 43px;
-}
-
 /* 課程報名word9 (與word10在原本HTML位置上有互換)*/
 footer div div.schema div p.word9 {
   grid-area: class;
-  direction: rtl;
-  text-align: right;
-  text-indent: 50px;
 }
 
 /* 周邊附件word10 */
 footer div div.schema div p.word10 {
   grid-area: other;
-  text-align: left;
-  text-indent: 18px;
 }
 
 footer div div.schema div p.word11 {
   grid-area: services;
-  text-align: left;
-  text-indent: 18px;
 }
 
 /* Tibame宣告 */
@@ -119,14 +155,16 @@ footer div.tibametxt {
 /* top按鈕 */
 footer > button.top {
   position: absolute;
-  top: -74px;
-  right: 132px;
+  top: -72px;
+  right: 62px;
   width: 50px;
   height: 48px;
+
   padding: 0px 5px 5px 0;
   color: white;
   background-color: rgba(0, 0, 0, 0);
   border: none;
+  /* border: 1px solid pink; */
   border-radius: 50px;
   overflow: hidden;
   display: flex;
@@ -137,4 +175,11 @@ footer > button.top:hover {
   transform: translateY(-30%);
   color: #f5df2f;
   cursor: pointer;
+}
+
+@media screen and (max-width: 767.98px) {
+  footer > button.top {
+    right: calc(50% - 25px);
+    top: -60px;
+  }
 }

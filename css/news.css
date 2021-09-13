@@ -3,24 +3,37 @@
 @import "./common/footer.css";
 
 body {
-  min-width: 1200px;
+  /* min-width: 1200px; */
 }
 
 main {
   /* border: 1px solid yellow; */
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 /* P1 */
 main div.news_p1 {
-  width: 770px;
-  height: 420px;
+  width: 768px;
   /* border: 1px solid blue; */
-  margin: 168px 0px 174px 300px;
+  margin: 44px 0px 174px 300px;
   display: flex;
   justify-content: space-between;
   position: relative;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  main div.news_p1 {
+    margin: 44px auto 174px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  main div.news_p1 {
+    max-width: 100%;
+    flex-direction: column;
+    margin: 30px 0px 134px 0px;
+  }
 }
 
 main div.news_p1 div a {
@@ -32,11 +45,19 @@ main div.news_p1 div a {
 
 main div.news_p1 div.main {
   width: 600px;
-  height: 420px;
+  /* height: 420px; */
   /* border: 1px solid red; */
   border-radius: 20px;
   position: relative;
   overflow: hidden;
+  font-size: 0;
+}
+
+@media screen and (max-width: 767.98px) {
+  main div.news_p1 div.main {
+    max-width: 100%;
+    margin: 0 auto;
+  }
 }
 
 main div.news_p1 div.main a {
@@ -50,14 +71,22 @@ main div.news_p1 div.main img {
   width: 100%;
   bottom: 20px;
   position: relative;
+  top: 0;
+  left: 0;
   bottom: 50px;
+}
+
+@media screen and (max-width: 767.98px) {
+  main div.news_p1 div.main img {
+    max-width: 100%;
+  }
 }
 
 /* 主消息背景白色 */
 main div.news_p1 div.main::before {
   content: "";
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   position: absolute;
   background-color: white;
   z-index: -1;
@@ -65,17 +94,24 @@ main div.news_p1 div.main::before {
 
 /* 主消息說明文字 */
 main div.news_p1 div.main p {
-  width: 100%;
+  max-width: 100%;
   height: 140px;
   margin: 0;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 2;
+  left: 0;
   bottom: -80px;
   transition: transform 600ms ease;
   font-size: 40px;
   text-align: center;
   padding: 4px 0px;
+}
+
+@media screen and (max-width: 767.98px) {
+  main div.news_p1 div.main p {
+    bottom: 0px;
+  }
 }
 
 main div.news_p1 div.main p span {
@@ -84,11 +120,17 @@ main div.news_p1 div.main p span {
   text-align: left;
   margin: 0 auto;
   /* border: 1px solid yellow; */
-  width: 550px;
+  max-width: 100%;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
+}
+
+@media screen and (max-width: 767.98px) {
+  main div.news_p1 div.main p span {
+    padding: 0px 5px;
+  }
 }
 
 /* 說明文字hover效果 */
@@ -96,9 +138,23 @@ main div.news_p1 div.main:hover p {
   transform: translateY(-80px);
 }
 
+@media screen and (max-width: 767.98px) {
+  main div.news_p1 div.main:hover p {
+    transform: translateY(0);
+  }
+}
+
 main div.news_p1 div.other {
   width: 150px;
   /* border: 1px solid red; */
+}
+
+@media screen and (max-width: 767.98px) {
+  main div.news_p1 div.other {
+    margin: 0 auto;
+    margin-top: 15px;
+    display: inline-block;
+  }
 }
 
 main div.news_p1 div.other > div {
@@ -136,19 +192,44 @@ main div.news_p1 div.line {
   position: absolute;
   bottom: -127px;
   left: -300px;
-  padding-left: 600px;
+  text-align: center;
+}
+
+main div.news_p1 div.line > svg {
+  width: 1px;
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  main div.news_p1 div.line {
+    max-width: 100%;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  main div.news_p1 div.line {
+    max-width: 100%;
+    left: 0;
+    bottom: -97px;
+  }
 }
 
 /* P2 */
 main div.news_p2 {
   width: 500px;
-  height: 420px;
   /* border: 1px solid blue; */
   margin: 0 auto 192px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
+}
+
+@media screen and (max-width: 767.98px) {
+  main div.news_p2 {
+    max-width: 100%;
+  }
 }
 
 main div.news_p2 p.subtitle {
@@ -229,21 +310,46 @@ main div.news_p2 div.content div.news_table div.txt {
   position: relative;
 }
 
-main div.news_p2 div.content div.news_table div.txt p {
+main div.news_p2 div.content div.news_table div.txt > div > ul {
+  list-style: none;
+  /* border: 1px solid green; */
+  margin: 0;
+  padding: 0;
+}
+
+main div.news_p2 div.content div.news_table div.txt > div > ul > li {
   width: 287px;
   font-family: "JhengHei-custom";
   font-size: 12px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin: 0px auto 14px;
+  margin: 0px auto 15px;
+  position: relative;
 }
 
-main div.news_p2 div.content div.news_table div.txt p:nth-child(1) {
+main
+  div.news_p2
+  div.content
+  div.news_table
+  div.txt
+  > div
+  > ul
+  > li:nth-child(1) {
   margin-top: 25px;
 }
 
-main div.news_p2 div.content div.news_table div.txt div a {
+main div.news_p2 div.content div.news_table div.txt > div > ul > li > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid pink; */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+main div.news_p2 div.content div.news_table div.txt > div > a {
   text-decoration: none;
   display: inline-block;
   width: 74px;
@@ -268,15 +374,34 @@ main div.news_p2 div.line {
   height: 80px;
   /* border: 1px solid red; */
   position: absolute;
-  bottom: -136px;
+  bottom: -155px;
   left: -350px;
-  padding-left: 600px;
+  text-align: center;
+}
+
+main div.news_p2 div.line > svg {
+  width: 1px;
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  main div.news_p2 div.line {
+    max-width: 100%;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  main div.news_p2 div.line {
+    max-width: 100%;
+    left: 0;
+    bottom: -155px;
+  }
 }
 
 /* P3 */
 main div.news_p3 {
   width: 982px;
-  height: 611px;
   /* border: 1px solid blue; */
   margin: 0 auto 40px;
   display: flex;
@@ -285,8 +410,16 @@ main div.news_p3 {
   position: relative;
 }
 
-main div.news_p2 p.subtitle {
-  margin: 0 auto 94px;
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  main div.news_p3 {
+    max-width: 491px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  main div.news_p3 {
+    max-width: 100%;
+  }
 }
 
 main div.news_p3 div.content {
@@ -294,9 +427,22 @@ main div.news_p3 div.content {
   display: flex;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  main div.news_p3 div.content {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  main div.news_p3 div.content {
+    flex-direction: column;
+    max-width: 100%;
+  }
+}
+
 main div.news_p3 div.content > div {
-  width: 491px;
-  height: 491px;
+  min-width: 491px;
+  min-height: 491px;
   display: grid;
   /* border: 1px solid green; */
   grid-template-columns: 1fr 1fr 1fr;
@@ -304,13 +450,31 @@ main div.news_p3 div.content > div {
   row-gap: 20px;
 }
 
+@media screen and (max-width: 767.98px) {
+  main div.news_p3 div.content > div {
+    grid-template-columns: 1fr 1fr;
+    min-width: 0;
+    max-width: 100%;
+    min-height: 0;
+    margin-bottom: 40px;
+    padding: 25px;
+  }
+}
+
 main div.news_p3 div.content > div div {
-  /* border: 1px solid white; */
+  border: 1px solid white;
   border-radius: 20px;
   transition: transform 200ms ease;
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
+}
+
+@media screen and (max-width: 767.98px) {
+  main div.news_p3 div.content > div > div {
+    border-radius: 10px;
+    padding-top: 100%;
+  }
 }
 
 main div.news_p3 div.content > div > div:hover {
@@ -352,7 +516,7 @@ main div.news_p3 div.content div.exhibition > div:nth-child(3) {
 
 main div.news_p3 div.content div.exhibition > div:nth-child(4) {
   background-image: url("../img/exhibition&market/ex4.jpg");
-  background-position: 0px center;
+  background-position: center center;
 }
 
 main div.news_p3 div.content div.exhibition > div:nth-child(5) {
@@ -363,6 +527,14 @@ main div.news_p3 div.content div.exhibition > div:nth-child(5) {
 main div.news_p3 div.content div.exhibition > div:nth-child(7) {
   background-color: #d8d8d8;
   position: relative;
+}
+
+@media screen and (max-width: 767.98px) {
+  main div.news_p3 div.content div.exhibition > div:nth-child(1),
+  main div.news_p3 div.content div.exhibition > div:nth-child(2),
+  main div.news_p3 div.content div.exhibition > div:nth-child(3) {
+    background-position: center center;
+  }
 }
 
 /* 市集圖片 */
@@ -402,7 +574,8 @@ main div.news_p3 div.content > div > div.hidden {
   visibility: hidden;
 }
 
-footer > button.top {
-  top: -52px;
-  right: 92px;
+@media screen and (max-width: 767.98px) {
+  main div.news_p3 div.content > div > div.hidden {
+    display: none;
+  }
 }

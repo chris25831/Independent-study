@@ -1,4 +1,4 @@
-// P1 錨點效果
+//*****P1 錨點效果
 $('.toggle1').click(function(){
   $('html,body,main').animate({scrollTop:$('.target1').offset().top}, 800);
 });
@@ -8,7 +8,7 @@ $('.toggle2').click(function(){
 });
 
 
-// P2 商品促銷carousel
+//*****P2 商品促銷carousel
 
 $('.shop_p2').slick({
   dots: true,
@@ -21,25 +21,37 @@ $('.shop_p2').slick({
 
 
 
-// P3 規格品牌分類表
+//*****P3 規格品牌分類表
 
-// 點div跳出下拉式選單
+// 點div跳出下拉式選單，再點擊一次或框外則收回
 var brand_placeholder_el = document.getElementsByClassName("placeholder")[0];
+var shop_p3 = document.getElementsByClassName("shop_p3")[0];
 
-brand_placeholder_el.addEventListener("click", function(){
+shop_p3.addEventListener("click", function(e){
+
   var select_menu = document.querySelector("div.brand_select > div:nth-child(2)");
-   
-  if( select_menu.classList.contains("show")){
+
+  if(e.target == brand_placeholder_el){
+
+    if( select_menu.classList.contains("show")){
+
+      select_menu.classList.remove("show");
+      select_menu.style.visibility= "hidden";
+    }else{
+
+      select_menu.classList.add("show");
+      select_menu.style.visibility= "visible";
+    }
+    
+  }else{
 
     select_menu.classList.remove("show");
     select_menu.style.visibility= "hidden";
-  }else{
-
-    select_menu.classList.add("show");
-    select_menu.style.visibility= "visible";
   }
-    
+
 })
+
+
 
 
 // 選單選取
@@ -113,16 +125,41 @@ cancelall_el.addEventListener("click", function(){
 $('.p3_content').slick({
   dots: true,
   rows: 2,
-  slidesPerRow: 5
-
+  slidesPerRow: 5,
+  responsive:[{
+    breakpoint: 1200,
+          settings: {
+            slidesPerRow: 4,
+          }
+  },{
+    breakpoint: 768,
+    settings: {
+      slidesPerRow: 2,
+    }
+  }
+]
+  
 });
 
-// P4 附件carousel
+
+//*****P4 附件carousel
 
 $('.p4_content').slick({
   dots: true,  
   slidesToShow: 5,
-  slidesToScroll: 2
+  slidesToScroll: 2,
+  responsive:[{
+    breakpoint: 1200,
+          settings: {
+            slidesToShow: 4,
+          }
+  },{
+    breakpoint: 768,
+    settings: {
+      slidesToShow: 2,
+    }
+  }
+]
 
 });
 

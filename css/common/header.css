@@ -5,7 +5,7 @@ header {
   z-index: 90;
   background-color: rgba(150, 150, 150);
   box-shadow: 0px 0px 15px 2px rgb(180, 180, 180);
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
@@ -19,7 +19,7 @@ header {
   header {
     min-width: 0;
     max-width: 100%;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
   }
 }
 
@@ -30,7 +30,7 @@ header nav {
   padding: 25px 26px;
   display: flex;
   position: relative;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
@@ -67,14 +67,22 @@ header nav ul li {
   border-radius: 32px;
 }
 
-header nav ul li.login {
-  margin-right: 32px;
+header nav ul li img {
+  width: 100%;
 }
 
+header nav ul li.login {
+  width: 35px;
+  margin-right: 32px;
+}
 @media screen and (max-width: 767.98px) {
   header nav ul li.login {
     margin-right: 10px;
   }
+}
+
+header nav ul li.shopping_cart {
+  width: 35px;
 }
 
 /* 購物車,login hover效果 */

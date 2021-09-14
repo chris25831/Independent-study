@@ -462,7 +462,7 @@ main div.news_p3 div.content > div {
 }
 
 main div.news_p3 div.content > div div {
-  border: 1px solid white;
+  /* border: 1px solid white; */
   border-radius: 20px;
   transition: transform 200ms ease;
   background-size: cover;

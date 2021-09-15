@@ -106,7 +106,45 @@ minus_el.addEventListener("click", function(){
     
 });
 
+// input 輸入監聽
+amount_input.addEventListener("keyup",function(){
+    // console.log("123");
 
+    
+    if(amount_input.value == ""){
+
+        amount_input.value = 1; 
+
+    }else{
+      
+        let amount = parseInt(amount_input.value); 
+
+        // 介於0到庫存之間
+        if( 0 < amount <= stock){
+
+            amount_input.value = amount;
+            input_check();
+
+        }
+        
+        // 大於庫存
+        if(amount > stock){
+
+            amount_input.value = stock;
+            input_check();
+        }
+        
+        // 小於1
+        if(amount < 1){
+            amount_input.value = 1;
+            input_check();
+        }
+        
+    }
+    
+    
+
+})
 
 
 

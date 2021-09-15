@@ -388,7 +388,6 @@ main div.item_frame > div.item_main > div.item_info > div.spec > div > input {
   font-family: "JhengHei-custom";
   list-style: none;
   outline-style: none;
-  pointer-events: none;
 }
 
 main

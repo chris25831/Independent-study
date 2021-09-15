@@ -464,13 +464,13 @@ main div.index_p4 > div.content > div p {
   transition: transform 1s, opacity 2s;
   /* border: 1px solid yellow; */
 }
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+@media screen and (min-width: 769px) and (max-width: 1199.98px) {
   main div.index_p4 > div.content > div p {
     width: 100%;
     font-size: 17px;
   }
 }
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 768.98px) {
   main div.index_p4 > div.content > div p {
     width: 100%;
     font-size: 17px;
@@ -591,7 +591,11 @@ main div.index_p5 div.content div.item div.item_intro {
   font-family: "JhengHei-custom";
   transition: transform 1s ease-out;
 }
-
+@media screen and (max-width: 768.98px) {
+  main div.index_p5 div.content div.item div.item_intro {
+    bottom: 0;
+  }
+}
 main div.index_p5 div.content div.item div.item_intro p {
   text-align: center;
 }
@@ -614,4 +618,9 @@ main div.index_p5 div.content div.item div.item_intro p:nth-child(2) {
 /* P5hover效果 */
 main div.index_p5 div.content div.item:hover div.item_intro {
   transform: translateY(-100%);
+}
+@media screen and (max-width: 768.98px) {
+  main div.index_p5 div.content div.item:hover div.item_intro {
+    transform: translateY(0%);
+  }
 }

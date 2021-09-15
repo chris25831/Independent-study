@@ -114,7 +114,7 @@ main div.connect_p1_frame div.connect_p1 > div {
 @media screen and (max-width: 767.98px) {
   main div.connect_p1_frame div.connect_p1 > div {
     /* text-align: center; */
-    padding-left: 150px;
+    padding-left: 112px;
   }
 }
 
@@ -244,6 +244,7 @@ main div.connect_p3_frame div.connect_p3 div.content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: white;
 }
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   main div.connect_p3_frame div.connect_p3 div.content {
@@ -320,6 +321,12 @@ main div.connect_p4_frame div.connect_p4 {
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 767.98px) {
+  main div.connect_p4_frame div.connect_p4 {
+    max-width: 100%;
+    align-items: center;
+  }
+}
 
 main div.connect_p4_frame div.connect_p4 p.subtitle {
   margin: 0px 0px 44px;
@@ -328,10 +335,20 @@ main div.connect_p4_frame div.connect_p4 p.subtitle {
 main div.connect_p4_frame div.connect_p4 div form input {
   border-radius: 5px;
 }
+@media screen and (max-width: 767.98px) {
+  main div.connect_p4_frame div.connect_p4 div form input {
+    width: 300px;
+  }
+}
 
 main div.connect_p4_frame div.connect_p4 div form textarea {
   border-radius: 5px;
   resize: none;
+}
+@media screen and (max-width: 767.98px) {
+  main div.connect_p4_frame div.connect_p4 div form textarea {
+    width: 380px;
+  }
 }
 
 main div.connect_p4_frame div.connect_p4 div form input.submit_btn {

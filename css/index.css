@@ -593,7 +593,7 @@ main div.index_p5 div.content div.item div.item_intro {
 }
 @media screen and (max-width: 768.98px) {
   main div.index_p5 div.content div.item div.item_intro {
-    bottom: 0;
+    bottom: -28px;
   }
 }
 main div.index_p5 div.content div.item div.item_intro p {

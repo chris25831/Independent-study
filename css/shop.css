@@ -30,6 +30,7 @@ main {
 @media screen and (max-width: 767.98px) {
   main {
     max-width: 100%;
+    overflow-x: hidden;
   }
 }
 
@@ -312,11 +313,18 @@ main
 }
 
 /* 感光度 */
-main div.shop_p3 div.filter form > div > div.iso select {
+main div.shop_p3 div.filter form > div > div.iso > div > div {
+  border-radius: 15px;
+  /* border: 1px solid brown;  */
+  overflow: hidden;
+}
+
+main div.shop_p3 div.filter form > div > div.iso > div > div > select {
   width: 92px;
   border-radius: 15px;
   padding: 5px 0px 5px 25px;
   cursor: pointer;
+  overflow: hidden;
 }
 
 /* 規格品牌 */
@@ -324,6 +332,11 @@ main div.shop_p3 div.filter form > div > div.brand > div.brand_select {
   width: 300px;
   /* border: 1px solid brown; */
   position: relative;
+}
+@media screen and (max-width: 767.98px) {
+  main div.shop_p3 div.filter form > div > div.brand > div.brand_select {
+    width: 250px;
+  }
 }
 
 main
@@ -550,11 +563,17 @@ main div.shop_p3 div.filter form > div > div.button {
   justify-content: center;
 }
 
+main div.shop_p3 div.filter form > div > div.button > div {
+  border: none;
+}
+
 main div.shop_p3 div.filter form > div > div.button > div > button {
   padding: 8px 5px;
   border-radius: 5px;
   border: none;
   cursor: pointer;
+  background-color: white;
+  text-align: center;
 }
 
 main div.shop_p3 div.filter form > div > div.button > div > button:first-child {
@@ -578,7 +597,7 @@ main div.shop_p3 div.p3_content {
 @media screen and (max-width: 767.98px) {
   main div.shop_p3 div.p3_content {
     width: 280px;
-    padding-left: 15px;
+    padding-left: 16px;
   }
 }
 
@@ -618,6 +637,12 @@ main div.p4_content > button.slick-prev {
     left: -60px;
   }
 }
+@media screen and (max-width: 767.98px) {
+  main div.p3_content > button.slick-prev,
+  main div.p4_content > button.slick-prev {
+    left: -60px;
+  }
+}
 
 /*  next  */
 main div.p3_content > button.slick-next,
@@ -625,6 +650,12 @@ main div.p4_content > button.slick-next {
   right: -80px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  main div.p3_content > button.slick-next,
+  main div.p4_content > button.slick-next {
+    right: -60px;
+  }
+}
+@media screen and (max-width: 767.98px) {
   main div.p3_content > button.slick-next,
   main div.p4_content > button.slick-next {
     right: -60px;

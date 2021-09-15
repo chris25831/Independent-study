@@ -280,6 +280,7 @@ main div.service_p3 button {
   transform: translateX(-50%);
   padding: 10px 15px 4px 15px;
   font-size: 28px;
+  background-color: #f5df2f;
   border-radius: 3px;
   border: none;
   cursor: pointer;

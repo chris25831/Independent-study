@@ -331,9 +331,15 @@ main div.index_p3 div.owner section p.content a {
   display: inline-block;
   position: absolute;
   /* border: 1px solid goldenrod;  */
-  bottom: 4px;
+  bottom: 2px;
   font-family: "Monotype Corsiva";
   font-size: 18px;
+  color: white;
+}
+@media screen and (max-width: 767.98px) {
+  main div.index_p3 div.owner section p.content a {
+    bottom: 0;
+  }
 }
 
 main div.index_p3 div.owner section p.content a:visited {

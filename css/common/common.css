@@ -79,6 +79,7 @@ p {
 p.subtitle {
   font-size: 28px;
   text-decoration: underline #f5df2f;
+  -webkit-text-decoration: underline #f5df2f;
   text-underline-offset: 4px;
   text-align: center;
 }
